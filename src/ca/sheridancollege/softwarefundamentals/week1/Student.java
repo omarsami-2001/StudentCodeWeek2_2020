@@ -6,25 +6,27 @@
 package ca.sheridancollege.softwarefundamentals.week1;
 
 /**
- * A class to model students. Students can 
- * study. They have a name and an ID.
+ * A class to model students. Students can study. They have a name and an ID.
+ *
  * @author dancye, 2020
  */
-public class Student 
-{
+public class Student {
+
     private String name;
     private String studentID;
+    private String program;
 
     /**
      * A constructor that takes in both parameters
+     *
      * @param givenName - the student's name
      * @param givenID - the student's ID
      */
-    public Student(String givenName, String givenID)
-    {
+    public Student(String givenName, String givenID) {
         name = givenName;
         studentID = givenID;
     }
+
     /**
      * @return the name
      */
@@ -52,16 +54,25 @@ public class Student
     public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
-    
+
+    public String getProgram() {
+        return program;
+    }
+
+    public void setProgram(String program) {
+        this.program = program;
+    }
+
     /**
-     * a method that returns true if a student
-     * studied and false otherwise.
+     * a method that returns true if a student studied and false otherwise.
+     *
      * @return whether or not the student studied
      */
-    public boolean didStudy()
-    {
+    public boolean didStudy() {
         return true;
     }
-    
-   
+
+    /**
+     * @return the program
+     */
 }
